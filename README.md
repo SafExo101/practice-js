@@ -5,3 +5,4 @@ Practising fundamentals of JS, React + TS
 ## Projects so far: 
 
 - Colour flipper
+- Counter
