@@ -1,0 +1,32 @@
+<h1 class="counter-display">COUNTER</h1>
+<button class="counter-minus" id="minus-btn">-</button>
+<button class="counter-add" id="add-btn">+</button>
+
+<script>
+  // create variables for the counter display + the buttons - and +
+  let counterDisplay = document.querySelector(".counter-display");
+  let counterMinus = document.querySelector(".counter-minus");
+  let counterAdd = document.querySelector(".counter-add");
+
+  // add a count variable
+  let count = 0;
+
+  updateDisplay();
+
+  // + event listener 
+  counterAdd.addEventListener("click", () => {
+    count++; //add 1 to the counter (counter = counter + 1)
+    updateDisplay(); //call the function
+  });
+
+  // - event listener 
+  counterMinus.addEventListener("click", () => {
+    count--; //add 1 to the counter (counter = counter + 1)
+    updateDisplay(); //call the function
+  });
+
+  function updateDisplay() {
+    //need this in both event listeners - and +
+    counterDisplay.innerHTML = count;
+  }
+</script>
