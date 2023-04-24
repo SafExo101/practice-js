@@ -1,0 +1,45 @@
+<html>
+  <style>
+    #menu {
+      width: 7rem;
+    }
+
+    #menu a {
+      display: block;
+      text-align: center;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    #menu a:hover {
+      background-color: lightblue;
+    }
+
+    #menu a.active {
+      background: blue;
+    }
+  </style>
+
+  <body>
+    <div id="menu">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Members">Members</a>
+      <a href="#Discography">Discography</a>
+      <a href="#Contact">Contact</a>
+    </div>
+
+    <button onclick="myClick()">Click me</button>
+
+    <script>
+      function myClick() {
+        var menu = document.getElementById("menu");
+        if (menu.style.display === "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
